@@ -131,7 +131,7 @@ This addon was written to supersede `ic-ajax` and `ember-cli-ic-ajax` addon
 because `ic-ajax` includes features and practices that are no longer considered
 best practices.
 
-`ic-ajax` also wraps requests in `Ember.run` which is no longer necessary on Ember 1.13+.
+`ic-ajax` wraps requests in `Ember.run` which is no longer necessary on Ember 1.13+.
 It also includes fixtures functionality which is inferior to [ember-cli-mirage](http://www.ember-cli-mirage.com).
 Furthermore, `ic-ajax` author is no longer actively involved in the Ember community.
 
@@ -155,6 +155,8 @@ Here is a list of notable changes that you need to consider when refactoring.
 * When you `import ajax from 'ic-ajax'`, `ajax` function will resolve to payload,
   same way as `ajax.request`. `import raw from 'ic-ajax/raw'` resolves to raw
   `jqXHR` object with payload on `response` property.
+
+Create an issue in this project if you encounter problems with the upgrade. 
 
 ## Installation
 
