@@ -212,7 +212,7 @@ export default Ember.Service.extend({
     @return {Boolean}
   */
   isInvalid(status/*, headers, payload */) {
-  return status === 422;
+    return status === 422;
   },
 
    /**
